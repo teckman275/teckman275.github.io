@@ -14,13 +14,14 @@
   100% {transform: translate(-10px,0px);}
 }
 
-
+/*
 div.scroll {
   overflow-x: hidden;
   overflow-y: auto;
-}
+}*/
 
 body {
+  display: block;
 
   background-repeat:no-repeat; 
 
@@ -43,6 +44,11 @@ body {
   color: black;
   margin: 0px;
   padding: 0px;
+  font-family: 'Orelega One', cursive;
+}
+
+head{
+  display: block;
 }
 
 h1 {
@@ -96,6 +102,7 @@ footer{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 99999;
 }
 
 .topnav a{
@@ -118,11 +125,13 @@ footer{
 
 .topnav a:hover{
   background-color: grey;
+  font-size: 20px;
+  /*animation: 1s ease 0s normal forwards 1 textSize1;*/
 }
 
 .topnav a.active{
-  background-color: orangered;
-  color: white;
+  /*background-color: blue;*/
+  font-size: 25px;
 }
 
 .pickCenter {
