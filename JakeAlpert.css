@@ -1,0 +1,154 @@
+@keyframes fadein{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes fadeinslow{
+  0% {opacity:0;}
+  45% {opacity:0;}
+  50% {transform: translate(0px,-20px)}
+  100% {opacity:1;}
+}
+@keyframes littlemoveup{
+  0% {transform: translate(0px,0px);}
+  50% {transform: translate(-30px,0px);}
+  100% {transform: translate(-10px,0px);}
+}
+
+
+div.scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+
+  background-repeat:no-repeat; 
+
+  background-image:  
+/* 3) Color(using gradient) */ linear-gradient(to right, RGB(0, 0, 0), RGB(0, 0, 0)),
+/* 2) Gradient              */ linear-gradient(to right, RGB(0, 0, 0), RGB(255, 255, 255)), 
+/* 3) Color(using gradient) */ linear-gradient(to right, RGB(255, 255, 255), RGB(255, 255, 255));
+
+  background-position:
+/* 1) Image position        */ 0 0, 
+/* 2) Gradient position     */ 0 1000px,
+/* 3) Color position        */ 0 1100px;
+
+  background-size:  
+/* 1) Image size            */ 100% 1000px,
+/* 2) Gradient size         */ 100% 100px, 
+/* 3) Color size            */ 100% 1000px;
+
+
+  color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+
+footer{
+  font-family: 'Orelega One', cursive;
+  position:absolute;
+  bottom: -100%;
+  width:100%;
+  height:60px;  
+  background:black;
+}
+
+.botomnav a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7px 7px;
+  margin: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  float: center;
+}
+
+.botomnav a:hover{
+  background-color: grey;
+}
+
+.titleA {
+  display: block;
+  font-family: 'Orelega One', cursive;
+  text-align: center;
+  animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+.titleB {
+  display: block;
+  font-family: 'Orelega One', cursive;
+  text-align: center;
+  animation: 3s ease 0s normal forwards 1 fadeinslow;
+}
+
+
+.topnav {
+  background-color: #000;
+  overflow: hidden;
+  font-family: 'Orelega One', cursive;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.topnav a.right{
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 40px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.topnav a:hover{
+  background-color: grey;
+}
+
+.topnav a.active{
+  background-color: orangered;
+  color: white;
+}
+
+.pickCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45%;
+  width: 50%;
+  animation: 3s ease 0s normal forwards 1 littlemoveup;
+}
+
+.pickRight{
+  float: right;
+  padding-right: 1000px;
+  padding-top: 200px;
+}
+
+.pickLeftImg{
+  float: left;
+  height: 30%;
+  width: 30%;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.setFont{
+  font-family: 'Orelega One', cursive;
+}
