@@ -1,73 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-family: 'Bodoni Moda', serif;">
     <head>
-        <title>HSW Pennumbra!</title>
-        <link rel="shortcut icon" href="pics\RedMoon.jpg" type="image/x-icon" author = "Zoltan Tasi from Upsplash">
-        <meta charset="UTF-8" name = "Penumbra" content="width=device-width,initial-scale=1">
-        <meta name="author" content="Jake Alpert">
-        <link rel="stylesheet" href="JakeAlpert1.css">
+        <title>Nice Nolan Ya!</title>
+        <meta charset="UTF-8" name = "Penumbra" content="width=device-width,initial-scale=1" type="image/x-icon">
+        <link rel="shortcut icon" href="close-up-of-a-black-crow-royalty-free-image-1601297505.jpg">
+        <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
-
-        <div class = "topnav">
-            <a class="active" href="index.html">Home</a></li>
-            <a href="studentWorks.html">Student Works</a></li>
-            <a href="contactInfo.html" class="right">Contact Info</a></li>
-        </div>
-
-        <div class="landing">
-            <h1 class="titleA">Penumbra</h1>
-            <p class="titleB">Creative Writing by Smithtown Highschool West</p>
-            <img class="pickCenter" src="pics\Optimized-testFade1.png"></img>
-            <p class="titleC">Credit: Picture by Mathew Schwartz on Upsplash</p>
-        </div>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet"> 
     </head>
 
     <body>
-        <div class="bodyContent">
-            <div class="sideContainer clearfix">
-                <img class="pic" src="pics\1BC10E6E903AC442D77B7E2A86B072A6.jpg"></img>
-                <div class="textContainer">
-                    <pre class="text">
-                        SHSW's Place for all things poetry, short stories,
-                        and otherwise creative writing!
-                    </pre>
-                </div>
-            </div>
-            
-            <div class="push"></div>
-
-            <div class="sideContainer clearfix">
-                <img class="imgR" src="pics\IMG_3612.jpeg"></img>
-                <div class = "textContainer">
-                    <pre class="text">
-                        Meeting once weekly, we roundtable student
-                        works as a creative outlet for West's many talented
-                        writers! Working together, we provide eachother with 
-                        constructive critiques to improve our writing!
-                    </pre>
-                </div>
-            </div>
+        <div class="intro">
+            <h1 class="welcome">Hello there Mr. Nolan</h1>
+            <p class="explain1">So, you said I could be the one to end your career.</p>
+            <p class="explain2">Know that I make good on my word and will follow though unless otherwise beneficial to me.</p>
+            <p class="explain3">Don't worry, not yet, but in two years like we agreed.</p>
+            <p class="explain4">That is why I have made this...</p>
+            <p class="explain4">(scroll down)</p>
         </div>
 
-        <div class="push"></div>
+        <!-- Display the countdown timer in an element -->
+    <h1 id="timer" class="countDown"></h1>
 
-            <div class="sideContainer clearfix">
-                <img class="imgR" src="pics\Pennumbra.jpg"></img>
-                <div class = "textContainer">
-                    <pre class="text">
-                        We work on all of our pieces with the goal
-                        of publishing them in our magazine and
-                        submitting to numerous competitions! 
-                    </pre>
-                </div>
-            </div>
-        </div>
+    <script>
+        var countDownDate = new Date("jun 18, 2023").getTime();
+        var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("timer").innerHTML = days + "d " + hours + "h "+ minutes + "m " + seconds + "s " + "until your retirement!";
+        if (distance = 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "Times up, Start Running Nolan...";
+        }
+        }, 1000);
+    </script>
 
-        <div class = "botomnav">
-            <a href="https://www.linkedin.com/in/jacob-alpert-872124203?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqVSxEqoCSqGZgyit74yLaA%3D%3D" target="_blank"> Website by Jake Alpert</a></li>
-            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank"></a></li>
-        </div>
+        <p class="explain5" style="margin-top: 3vh;">Enjoy the rest of it,</p>
+        <p class="explain6">it will go by fast.</p>
 
     </body>
 </html>

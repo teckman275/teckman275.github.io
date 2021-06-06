@@ -1,0 +1,70 @@
+@keyframes fadeInUp {
+    0% {opacity:0;}
+    0% {transform: translate(0vh,10vh);}
+    100% {transform: translate(0px,0vh);}
+    100% {opacity:1;}
+    to {
+        visibility: visible;
+      }
+}
+
+@keyframes delay {
+    0% {visibility: hidden;}
+    100% {visibility: visible;}
+    100% {animation-fill-mode: visible}
+}
+
+body{
+    display: block;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    animation: 7s ease 0s normal forwards 1 fadeInUp;
+}
+
+.intro {
+    height: 100vh;
+    /*border: 3px solid cyan;*/
+}
+
+p {
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 7vh;
+    visibility: hidden;
+}
+
+.explain1 {
+    animation: 3s ease 4s forwards fadeInUp;
+}
+
+.explain2 {
+    animation: 3s ease 7s forwards fadeInUp;
+}
+
+.explain3 {
+    animation: 3s ease 10s forwards fadeInUp;
+}
+
+.explain4 {
+    animation: 3s ease 13s forwards fadeInUp;
+}
+
+.countDown {
+    visibility: hidden;
+    text-align: center;
+    font-size: 10vh;
+    animation: 3s ease 13s forwards fadeInUp;
+}
+
+.explain5 {
+    animation: 1s ease 18s forwards fadeInUp;
+}
+
+.explain6 {
+    animation: 3s ease 20s forwards fadeInUp;
+}
