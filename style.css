@@ -32,9 +32,9 @@ body{
 }
 
 p {
-    font-size: xx-large;
+    font-size: 3.5vh;
     text-align: center;
-    padding-bottom: 7vh;
+    padding-bottom: 6vh;
     visibility: hidden;
 }
 
@@ -52,13 +52,19 @@ p {
 
 .explain4 {
     animation: 3s ease 13s forwards fadeInUp;
+    padding-bottom: 2vh;
+}
+
+.explain41 {
+    animation: 3s ease 13s forwards fadeInUp;
+    padding: 0px;
 }
 
 .countDown {
     visibility: hidden;
     text-align: center;
     font-size: 10vh;
-    animation: 3s ease 13s forwards fadeInUp;
+    animation: 5s ease 14s forwards fadeInUp;
 }
 
 .explain5 {
@@ -66,5 +72,25 @@ p {
 }
 
 .explain6 {
-    animation: 3s ease 20s forwards fadeInUp;
+    animation: 1s ease 20s forwards fadeInUp;
+}
+
+.explain7 {
+    animation: 1s ease 22s forwards fadeInUp;
+}
+
+.explain8 {
+    animation: 1s ease 24s forwards fadeInUp;
+    padding-bottom: 0vh;
+}
+
+.foot {
+    animation: 1s ease 24s forwards fadeInUp;
+    text-align: left;
+    padding-bottom: 7.5vh;
+    padding-left: 5vw;
+    padding-top: 0vh;
+    font-size: 2.5vh;
+    visibility: hidden;
+    /*text-decoration: none;*/
 }
