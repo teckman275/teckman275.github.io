@@ -28,7 +28,8 @@ body{
 
 .intro {
     height: 100vh;
-    /*border: 3px solid cyan;*/
+    /*border: 3px solid cyan;
+    padding-bottom: 3vh;*/
 }
 
 p {
