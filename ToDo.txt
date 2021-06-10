@@ -1,0 +1,4 @@
+combine gallery and student works
+combine meet the team and awards & history
+
+make gallery into a slide show and make a js thing

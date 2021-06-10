@@ -60,7 +60,7 @@ h1 {
 
 /*---------end div classes start classes---------*/
 
-/*-----body classes---->*/
+/*<-----body classes---->*/
 
 .bodyContent{
   min-height: 100%;
@@ -76,6 +76,77 @@ h1 {
   padding: 0px;
 }
 
+/*-----class for making the image next to the text-----*/
+.sideContainer{
+  padding-top: 0px;
+  padding-bottom: 30px;
+  width: 90% ;
+  max-width: 100% ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+.sideContainer .push{
+  padding-top: 100px;
+}
+
+/*
+.sideContainer .pushSmall{
+  padding-top: 100px;
+}*/
+
+/*puts the title on the right with styling, uses p    vvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.sideContainer p.textTitleR{
+  float: left;
+  padding-left: 70px;
+  font-size: large; 
+}
+/*puts the paragraph on the right with styling, uses p*/
+.sideContainer p.textR{
+  float: left;
+  padding-top: 50px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+/*sizes image and puts it on the left*/
+.sideContainer img.imgL{
+  float: left;
+  padding-left: 75px;
+  width: 70vh;
+}
+/*                                                   ^^^^^^^^^^^^^^^^^^^^^^*/
+/*puts the title on the left with styling, uses p     vvvvvvvvvvvvvvvvvvv*/
+.sideContainer p.textTitleL{
+  float: right;
+  padding-right: 70px;
+  font-size: large; 
+}
+
+/*puts the paragraph on the left with styling, uses p*/
+.sideContainer p.textL{
+  float: right;
+  padding-top: 50px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.sideContainer pre.textL{
+  float: right;
+  font-size: 30px;
+  margin-right: 10px;
+  padding: 70px 0;
+  font-family: 'Orelega One', cursive;
+}
+
+/*sizes image and puts it on the right*/
+.sideContainer img.imgR{
+  padding-right: 75px;
+  float: right;
+  width: 70vh;
+}
+/*                                                   ^^^^^^^^^^^^^^^^^^^^^^*/
+
 /*-----top navigation class-----*/
 .topnav {
   background-color: #000;
@@ -84,7 +155,7 @@ h1 {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 99999;
+  z-index: 99;
 }
 /*font and settings for reg button on left*/
 .topnav a{
@@ -149,6 +220,7 @@ h1 {
   font-family: 'Orelega One', cursive;
   margin: 0px;
   margin-bottom: 20%;
+  color: white;
 }
 
 /*font, settings, and animations for main big title, uses h1*/
@@ -169,82 +241,9 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 45%;
-  width: 50%;
+  
+  height: 70vh;
   animation: 3s ease 0s normal forwards 1 littlemoveup;
 }
 
-/*-----class for making the image next to the text-----*/
-.sideContainer{
-  padding-top: 0px;
-  padding-bottom: 30px;
-  width: 90% ;
-  max-width: 100% ;
-  margin-left: auto ;
-  margin-right: auto ;
-}
 
-.sideContainer .push{
-  padding-top: 100px;
-}
-
-/*
-.sideContainer .pushSmall{
-  padding-top: 100px;
-}*/
-
-/*puts the title on the right with styling, uses p    vvvvvvvvvvvvvvvvvvvvvvvvvv*/
-.sideContainer p.textTitleR{
-  float: left;
-  padding-left: 70px;
-  font-size: large; 
-}
-/*puts the paragraph on the right with styling, uses p*/
-.sideContainer p.textR{
-  float: left;
-  padding-top: 50px;
-  padding-left: 0px;
-  margin-left: 0px;
-}
-
-/*sizes image and puts it on the left*/
-.sideContainer img.imgL{
-  float: left;
-  padding-left: 75px;
-  height: 35%;
-  width: 35%;
-}
-/*                                                   ^^^^^^^^^^^^^^^^^^^^^^*/
-/*puts the title on the left with styling, uses p     vvvvvvvvvvvvvvvvvvv*/
-.sideContainer p.textTitleL{
-  float: right;
-  padding-right: 70px;
-  font-size: large; 
-}
-
-/*puts the paragraph on the left with styling, uses p*/
-.sideContainer p.textL{
-  float: right;
-  padding-top: 50px;
-  padding-right: 0px;
-  margin-right: 0px;
-}
-
-/*sizes image and puts it on the right*/
-.sideContainer img.imgR{
-  padding-right: 75px;
-  float: right;
-  height: 35%;
-  width: 35%;
-}
-/*                                                   ^^^^^^^^^^^^^^^^^^^^^^*/
-
-/*basic fade in animation*/
-.fadeIn{
-  animation: 3s ease 0s normal forwards 1 fadeinslowimg;
-}
-
-/*basic set font*/
-.setFont{
-  font-family: 'Orelega One', cursive;
-}
